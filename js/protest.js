@@ -12,11 +12,11 @@ $(function() {
             && navigator.userAgent.indexOf('Chrome') == -1
         )
         ||
-        navigator.userAgent.indexOf('iPhone')
+        navigator.userAgent.indexOf('iPhone') != -1
         ||
-        navigator.userAgent.indexOf('iPad')
+        navigator.userAgent.indexOf('iPad') != -1
         ||
-        navigator.userAgent.indexOf('iPod')
+        navigator.userAgent.indexOf('iPod') != -1
     ) {
         $('body').addClass('ios');
     }
