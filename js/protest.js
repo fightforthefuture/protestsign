@@ -5,6 +5,22 @@ var NUM_SVG = 4;
 var svg = 0;
 
 $(function() {
+
+    if (
+        (
+            navigator.userAgent.indexOf('Safari') != -1
+            && navigator.userAgent.indexOf('Chrome') == -1
+        )
+        ||
+        navigator.userAgent.indexOf('iPhone')
+        ||
+        navigator.userAgent.indexOf('iPad')
+        ||
+        navigator.userAgent.indexOf('iPod')
+    ) {
+        $('body').addClass('ios');
+    }
+
     $("body").swipe( {
         //Generic swipe handler for all directions
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
