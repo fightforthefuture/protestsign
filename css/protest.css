@@ -1,0 +1,75 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+/* --- end public domain code --- */
+
+body {
+    width: 100%;
+    height: 100%;
+    transition: all .5s linear;
+}
+path {
+    transition: all .5s linear;
+}
+
+body.theme-0 { background: #3b1e4d; }
+body.theme-0 path { fill: #de3ccd; }
+
+body.theme-1 { background: black; }
+body.theme-1 path { fill: #c00; }
+
+body.theme-2 { background: #313142; }
+body.theme-2 path { fill: #007ba0; }
+
+body.theme-3 { background: #333; }
+body.theme-3 path { fill: #999; }
+
+svg { max-width: 100%; max-height: 100%; }
+
+.swipe-container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    transition: all .5s ease-out;
+}
+.swipe-container > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 2%;
+}
+.swipe-container.invisible {
+    display: none;
+}
+.swipe-container.left {
+    margin-left: -100%;
+    margin-right: 0px;
+    opacity: 0;
+}
+.swipe-container.right {
+    margin-right: -100%;
+    margin-left: 0px;
+    opacity: 0;
+}
+
+
+path {
+    fill: red;
+}
+#save {
+}
