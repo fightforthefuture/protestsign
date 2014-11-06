@@ -58,13 +58,17 @@ svg { max-width: 100%; max-height: 100%; }
     display: none;
 }
 .swipe-container.left {
+    /*
     margin-left: -100%;
     margin-right: 0px;
+    */
     opacity: 0;
 }
 .swipe-container.right {
+    /*
     margin-right: -100%;
     margin-left: 0px;
+    */
     opacity: 0;
 }
 
