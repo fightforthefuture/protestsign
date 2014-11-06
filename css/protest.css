@@ -37,7 +37,7 @@ body.theme-2 path { fill: #007ba0; }
 body.theme-3 { background: #333; }
 body.theme-3 path { fill: #999; }
 
-svg { width: 100%; }
+svg { }
 
 .swipe-container {
     position: absolute;
