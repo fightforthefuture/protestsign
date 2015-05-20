@@ -1,7 +1,7 @@
 var NUM_THEMES = 4;
 var theme = 0;
 
-var NUM_SVG = 7;
+var NUM_SVG = 2;
 var svg = 0;
 
 $(function() {
