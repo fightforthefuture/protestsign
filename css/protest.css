@@ -22,9 +22,11 @@ body {
     height: 100%;
     transition: all .5s linear;
     overflow: hidden;
+    /*
     background: url(../images/sunset-FUNSET.jpg);
     background-position: center top;
     background-size: 100% 100%;
+    */
     /*
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -36,17 +38,17 @@ path {
     transition: all .5s linear;
 }
 
-body.theme-0 { /*background: #3b1e4d;*/ }
-body.theme-0 path { /* fill: #de3ccd; */ }
+body.theme-0 { background: #3b1e4d; }
+body.theme-0 path { fill: #de3ccd; }
 
-body.theme-1 { /*background: black;*/ }
-body.theme-1 path { /* fill: #c00; */ }
+body.theme-1 { background: black; }
+body.theme-1 path {  fill: #c00;  }
 
-body.theme-2 { /*background: #313142;*/ }
-body.theme-2 path { /* fill: #007ba0; */ }
+body.theme-2 { background: #313142; }
+body.theme-2 path {  fill: #007ba0;  }
 
-body.theme-3 { /*background: #333;*/ }
-body.theme-3 path { /* fill: #999; */ }
+body.theme-3 { background: #333; }
+body.theme-3 path {  fill: #999;  }
 
 svg { max-width: 80%; max-height: 80%; }
 
@@ -87,6 +89,10 @@ svg { max-width: 80%; max-height: 80%; }
     margin-right: -100%;
     margin-left: 0px;
     opacity: 0;
+}
+.swipe-container img {
+    width: 100%;
+    height: auto;
 }
 body.ios .swipe-container.left {
     margin-right: 0px;
